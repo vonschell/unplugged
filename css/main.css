@@ -95,13 +95,15 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
-  text-align: left;
   color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -234,9 +236,9 @@ footer .copyright {
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
-  background-color: #527158;
 }
 
 aside .form {
@@ -289,8 +291,8 @@ input[type=button] {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
-  text-align: left;
 }
 
 /* Reviews */
@@ -334,12 +336,12 @@ input[type=button] {
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-   
+
 .faq {
   display: flex;
   justify-content: center;
   background-color: #527158;
-}   
+}
 
 .faq .content-wrapper {
   display: flex;
@@ -453,129 +455,134 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here */
 
-    /* General styles */
-    .content-wrapper {
-      max-width: 640px;
-      margin: 100px 0;
-    }
-  
-    h2 {
-      font-size: 2.25em;
-      line-height: 1.333;
-    }
-  
-    h3 {
-      font-size: 1.5em;
-      line-height: 1.25;
-    }
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
 
-    /* Header */
-    header {
-      padding: 33px 0;
-    }
-  
-    header .content-wrapper {
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    header figure {
-      width: 30%;
-    }  
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
 
-    header nav {
-      width: 20%;
-    }
-  
-    header nav ul {
-      justify-content: space-between;
-    }
-  
-    .header-divider {
-      display: none;
-    }
-  
-    /* Hero Area */
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
 
-    .hero-area h1 {
-      font-size: 3em;
-      line-height: 1;
-      margin: 0;
-    }
-  
-    /* Aside */
-    aside .content-wrapper {
-      margin: 50px 0;
-      display: flex;
-      justify-content: space-between;
-      align-content: flex-start;
-    }
-  
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-      width: 40%;
-      margin: 0;
-    }
-  
-    /* Features */
-    .features article {
-      display: flex;
-      align-items: center;
-      flex-flow: column wrap;
-      flex-basis: 50%;
-    }
-  
-    .features .features-item-description {
-      width: 62%;
-    }
-  
-    /* Reviews */
-    .reviews article {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .reviews h2 {
-      width: 85%;
-    }  
+  /* Header */
+  header {
+    padding: 33px 0;
+  }
 
-    .reviews article div {
-      width: 49%;
-    }
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-    .reviews h3 {
-      width: 75%;
-      margin: 0;
-    }
-  
-    /* Footer */
-    footer .content-wrapper {
-      width: 65%;
-    }
-  
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-    }
-  
-    footer .contact {
-      margin-bottom: 0;
-    }
+  header figure {
+    width: 30%;
+  }
 
-    footer h4 {
-      font-size: 1.5em;
-      margin-bottom: 40px;
-    }
+  header nav {
+    width: 20%;
+  }
 
-    footer p {
-      line-height: 1.285;
-    }
-  
-    footer .copyright {
-      width: 100%;
-    }
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 62%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
 
   /* ==========================================================================
      About Page
@@ -631,11 +638,11 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
-  
+
   header {
     padding: 15px 0;
   }
-  
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -734,6 +741,7 @@ input[type=button] {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -801,4 +809,3 @@ input[type=button] {
     page-break-after: avoid;
   }
 }
-
