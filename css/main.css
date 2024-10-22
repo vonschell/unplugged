@@ -348,11 +348,11 @@ input[type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  margin: 50PX 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
-  margin-bottom: 40%;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
