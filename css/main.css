@@ -172,7 +172,7 @@ header figure {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
-  background-color: #3a3a3a;
+  background: #3a3a3a;
 }
 
 header nav {
@@ -206,7 +206,6 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 
 footer .contact {
@@ -234,8 +233,9 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background: url(../img/unplugged-retreat.jpg) center;
-  background-size: cover;
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover; 
+  background-position: center;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -285,8 +285,9 @@ input[type=button] {
 /* Features */
 
 .features {
-  background: url('../img/unplugged-retreat-features.jpg') center;
+  background: url('../img/unplugged-retreat-features.jpg'); 
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -305,6 +306,11 @@ input[type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -405,8 +411,7 @@ input[type=button] {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+.hidden {
   display: none !important;
 }
 
@@ -485,8 +490,8 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
-  /*Tablet styles here */
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/
 
   /* General styles */
   .content-wrapper {
@@ -583,6 +588,7 @@ input[type=button] {
     width: 85%;
   }
 
+  .reviews article figure, 
   .reviews article div {
     width: 49%;
   }
@@ -622,14 +628,14 @@ input[type=button] {
   }
 
   /* ==========================================================================
-     About Page
-     ========================================================================== */
+   About Page
+   ========================================================================== */
 
   .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 20px
+    padding-top: 20px;
   }
 
   .mission-content p {
@@ -654,7 +660,6 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-
   /* ==========================================================================
     FAQ Page
     ========================================================================== */
@@ -677,15 +682,17 @@ input[type=button] {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width:1200px) {
   /*Desktop styles here*/
 
-  header {
-    padding: 15px 0;
-  }
-
+  /* General styles */
   .content-wrapper {
     max-width: 960px;
+  }
+
+  /* Header */
+  header {
+    padding: 15px 0;
   }
 
   h2 {
@@ -704,8 +711,8 @@ input[type=button] {
 
   /* Hero */
   .hero-area h1 {
-    width: 80%;
     font-size: 3.75em;
+    width: 80%;
   }
 
   /* Aside */
@@ -715,7 +722,7 @@ input[type=button] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 40%;
   }
 
   .form-description p {
@@ -787,8 +794,8 @@ input[type=button] {
 @media print {
 
   *,
-  *::before,
-  *::after {
+  *:before,
+  *:after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
