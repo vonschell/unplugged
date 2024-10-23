@@ -597,7 +597,7 @@ input[type=button] {
     width: 85%;
   }
 
-  .reviews article figure, 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -616,7 +616,6 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
 
   footer .contact {
@@ -736,7 +735,7 @@ input[type=button] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
+    width: 30%;
   }
 
   .form-description p {
